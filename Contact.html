@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Insulin Indulgence</title>
+
+    <link rel="icon" href="logo_new.png" type="image/x-icon">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            background-color: #ffecbb;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #f1ceb1;
+            padding: 15px 20px;
+            box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+            transform: scale(1.5);
+            transform-origin: center;
+            margin-bottom: 20px;
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 20px;
+            z-index: 1;
+        }
+        .nav-buttons a {
+            color: #fff;
+            background-color: #6b705c;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-family: 'Merriweather', serif;
+            transition: background-color 0.3s ease;
+        }
+        .nav-buttons a:hover {
+            background-color: #556b45;
+        }
+
+        .main {
+            padding: 20px;
+            text-align: center;
+        }
+        .main h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6b705c;
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Merriweather', serif;
+        }
+        .contact-form button {
+            background-color: #6b705c;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-family: 'Merriweather', serif;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .contact-form button:hover {
+            background-color: #556b45;
+        }
+
+        footer {
+            background-color: #6b705c;
+            color: #fff;
+            padding: 40px 20px;
+            box-shadow: 0px -2px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            margin-top: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer .footer-content {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        footer .footer-content div {
+            flex: 1;
+            margin: 10px;
+        }
+        footer h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        footer p {
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo_new-removebg-preview.png" alt="Logo" class="logo">
+
+    <div class="nav-buttons">
+        <a href="Home.html">Home</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="#">Order Online</a>
+        <a href="Contact.html">Contact Us</a>
+        <a href="#">Menu</a>
+    </div>
+</header>
+
+<div class="main">
+    <h1>Contact Us</h1>
+    <div class="contact-form">
+        <form id="contactForm" onsubmit="return validateForm()">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <span id="nameError" class="error"></span>
+
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <span id="emailError" class="error"></span>
+
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            <span id="subjectError" class="error"></span>
+
+            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            <span id="messageError" class="error"></span>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <div>
+            <img src="logo_new.png" alt="Insulin Indulgence Logo" class="logo" style="width: 100px; transform: scale(1); margin-bottom: 10px;">
+            <p>A tasty treat for any occasion! Our cakes make it easy to celebrate any special event with family and friends.</p>
+        </div>
+        
+        <div>
+            <h2>Help & Information</h2>
+            <a href="#">Contact Us</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Shipping, Refunds and Cancellations</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <div>
+            <h2>Shop By Category</h2>
+            <a href="#">Celebration Cakes</a>
+            <a href="#">Mini Cakes</a>
+            <a href="#">Brownies</a>
+            <a href="#">Tea Cakes</a>
+        </div>
+        <div>
+            <h2>Menu</h2>
+            <a href="#">Home</a>
+            <a href="#">Shop</a>
+            <a href="#">Corporates</a>
+            <a href="#">In The News</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function validateForm() {
+        let valid = true;
+
+        // Clear previous errors
+        document.getElementById("nameError").textContent = "";
+        document.getElementById("emailError").textContent = "";
+        document.getElementById("subjectError").textContent = "";
+        document.getElementById("messageError").textContent = "";
+
+        // Validate name
+        const name = document.getElementById("name").value;
+        if (name.trim() === "") {
+            document.getElementById("nameError").textContent = "Name is required.";
+            valid = false;
+        }
+
+        // Validate email
+        const email = document.getElementById("email").value;
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(email)) {
+            document.getElementById("emailError").textContent = "Please enter a valid email address.";
+            valid = false;
+        }
+
+        // Validate subject
+        const subject = document.getElementById("subject").value;
+        if (subject.trim() === "") {
+            document.getElementById("subjectError").textContent = "Subject is required.";
+            valid = false;
+        }
+
+        // Validate message
+        const message = document.getElementById("message").value;
+        if (message.trim() === "") {
+            document.getElementById("messageError").textContent = "Message is required.";
+            valid = false;
+        }
+
+        return valid;
+    }
+</script>
+
+</body>
+</html>

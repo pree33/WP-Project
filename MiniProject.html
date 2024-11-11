@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    form {
+      width: 400px;
+      margin: 50px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <form action="/submit-contact" method="POST">
+    <h2>Contact Us</h2>
+    <h4>Get in touch with us! Whether you have questions, feedback, or need assistance, we're here to help. Fill out the form below or use our contact details, and we'll respond as soon as possible</h4>
+
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number (Optional):</label>
+    <input type="tel" id="phone" name="phone" placeholder="e.g. +123456789">
+
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+
+</body>
+</html>
+
+<section class="about">
+    <h2>Our Story</h2>
+    <p>
+      Sweet Delights Bakery began with a passion for fresh, homemade pastries and cakes. 
+      Established in 2010, we have grown from a small neighborhood bakery to a beloved spot for 
+      people looking to enjoy the finest baked goods. From artisan breads to custom-designed cakes, 
+      our goal has always been to bring joy through every bite.
+    </p>
+    <p>
+      Using only the freshest ingredients, our experienced bakers work tirelessly to ensure that 
+      every product that comes out of our kitchen is crafted with love and attention to detail.
+    </p>
+  </section>
+
+  <section class="mission">
+    <h2>Our Mission</h2>
+    <p>
+      At Sweet Delights Bakery, our mission is simple: to provide the highest quality baked goods 
+      made with love and passion. We believe in creating not just food, but experiences. Whether 
+      it's a quick breakfast treat or a customized cake for your special occasion, our goal is to 
+      make your day a little sweeter.
+    </p>
+  </section>
